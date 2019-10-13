@@ -5,32 +5,31 @@ namespace HigherLower
 {
     public partial class NewGame : Form
     {
-        private int _currentSeed;
+        internal NewGameResult Result { get; private set; }
 
-        public int Seed { get; private set; }
-
-        public NewGame(int currentSeed)
+        public NewGame()
         {
             InitializeComponent();
-            _currentSeed = currentSeed;
+            Result = NewGameResult.Exit;
         }
 
         private void cmdExit_Click(object sender, EventArgs e)
         {
+            Result = NewGameResult.Exit; 
             DialogResult = DialogResult.Cancel;
             Application.Exit();
         }
 
         private void cmdReplay_Click(object sender, EventArgs e)
         {
-            Seed = _currentSeed;
+            Result = NewGameResult.Replay;
             DialogResult = DialogResult.OK;
             Close();
         }
 
         private void cmdNewGame_Click(object sender, EventArgs e)
         {
-            Seed = Environment.TickCount;
+            Result = NewGameResult.NewGame;
             DialogResult = DialogResult.OK;
             Close();
         }

@@ -25,9 +25,7 @@ namespace HigherLower
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            _seed = Environment.TickCount;
-
-            StartGame();
+            NewGame(Environment.TickCount);
 
             BackColor = Color.FromArgb(7, 99, 36);
 
@@ -46,40 +44,54 @@ namespace HigherLower
             pbBack3.BackColor = Color.White;
             pbBack3.BorderStyle = BorderStyle.FixedSingle;
 
-            DisplayCard();
+            DisplayCards();
         }
 
 
         private void PlayAgain()
         {
-            var frm = new NewGame(_seed);
-            if (frm.ShowDialog() == DialogResult.OK)
+            var frm = new NewGame();
+            frm.ShowDialog();
+
+            switch (frm.Result)
             {
-                _seed = frm.Seed;
-                StartGame();
+                case NewGameResult.NewGame:
+                    NewGame(Environment.TickCount);
+                    break;
+                case NewGameResult.Replay:
+                    NewGame(_seed);
+                    break;
+                default:
+                    Application.Exit();
+                    break;
             }
         }
 
-        private void StartGame()
+        private void NewGame(int seed)
         {
-            Text = $"Higher or Lower (Seed: {_seed})";
-
             _pack = new Pack();
-            _currentCardIndex = 0;
-            _score = 0;
-            lblScore.Text = _score.ToString();
-
-            var rnd = new Random(_seed);
+            var rnd = new Random(seed);
             for (int i = 0; i < 100; i++)
             {
                 _pack.Shuffle(rnd);
             }
 
-            DisplayCard();
+            _seed = seed;
+            Text = $"Higher or Lower (Seed: {seed})";
+
+            _score = 0;
+            lblScore.Text = _score.ToString();
+
+            _currentCardIndex = 0;
+            DisplayCards();
         }
 
-        private void DisplayCard()
+        private void DisplayCards()
         {
+            pbBack.Visible = _currentCardIndex < 49;
+            pbBack3.Visible = _currentCardIndex < 50;
+            pbBack2.Visible = _currentCardIndex < 51;
+
             if (_currentCardIndex > 0)
             {
                 var previousCard = _pack.GetCard(_currentCardIndex - 1);
@@ -119,7 +131,14 @@ namespace HigherLower
         private void CompareCards(Func<Card, Card, bool> guess)
         {
             _currentCardIndex++;
-            DisplayCard();
+
+            if (_currentCardIndex >= 52)
+            {
+                MessageBox.Show("You won - well done");
+                return;
+            }
+
+            DisplayCards();
 
             var previousCard = _pack.GetCard(_currentCardIndex - 1);
             var newCard = _pack.GetCard(_currentCardIndex);
