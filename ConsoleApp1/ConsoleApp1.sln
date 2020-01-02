@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1.csproj", "{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackOfCards", "..\PackOfCards\PackOfCards.csproj", "{274E56EA-1742-41AC-9E01-4C0788CEEB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "..\ConsoleApp2\ConsoleApp2.csproj", "{5C3D49BD-A50E-436F-84B7-D6A6249B3307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HigherLower", "..\HigherLower\HigherLower.csproj", "{855DC2BA-53AC-4FB2-B924-F592B8690701}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatePI", "..\CalculatePI\CalculatePI.csproj", "{194669C8-9B1B-4ADB-A20C-5B330564B344}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddleSquareMethod", "..\MiddleSquareMethod\MiddleSquareMethod.csproj", "{B1CD08F0-3567-4FB7-A865-992022D8F724}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274E56EA-1742-41AC-9E01-4C0788CEEB8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274E56EA-1742-41AC-9E01-4C0788CEEB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274E56EA-1742-41AC-9E01-4C0788CEEB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274E56EA-1742-41AC-9E01-4C0788CEEB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3D49BD-A50E-436F-84B7-D6A6249B3307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3D49BD-A50E-436F-84B7-D6A6249B3307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3D49BD-A50E-436F-84B7-D6A6249B3307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3D49BD-A50E-436F-84B7-D6A6249B3307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855DC2BA-53AC-4FB2-B924-F592B8690701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855DC2BA-53AC-4FB2-B924-F592B8690701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855DC2BA-53AC-4FB2-B924-F592B8690701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855DC2BA-53AC-4FB2-B924-F592B8690701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{194669C8-9B1B-4ADB-A20C-5B330564B344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{194669C8-9B1B-4ADB-A20C-5B330564B344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{194669C8-9B1B-4ADB-A20C-5B330564B344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{194669C8-9B1B-4ADB-A20C-5B330564B344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CD08F0-3567-4FB7-A865-992022D8F724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CD08F0-3567-4FB7-A865-992022D8F724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CD08F0-3567-4FB7-A865-992022D8F724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CD08F0-3567-4FB7-A865-992022D8F724}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13168A49-5022-46DE-B012-DA80BCEA94D6}
+	EndGlobalSection
+EndGlobal
