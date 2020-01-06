@@ -3,19 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1.csproj", "{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{4A349CC1-31B9-40E6-B166-CDBC5F8D5837}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackOfCards", "..\PackOfCards\PackOfCards.csproj", "{274E56EA-1742-41AC-9E01-4C0788CEEB8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PackOfCards", "PackOfCards\PackOfCards.csproj", "{274E56EA-1742-41AC-9E01-4C0788CEEB8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "..\ConsoleApp2\ConsoleApp2.csproj", "{5C3D49BD-A50E-436F-84B7-D6A6249B3307}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{5C3D49BD-A50E-436F-84B7-D6A6249B3307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HigherLower", "..\HigherLower\HigherLower.csproj", "{855DC2BA-53AC-4FB2-B924-F592B8690701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HigherLower", "HigherLower\HigherLower.csproj", "{855DC2BA-53AC-4FB2-B924-F592B8690701}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatePI", "..\CalculatePI\CalculatePI.csproj", "{194669C8-9B1B-4ADB-A20C-5B330564B344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatePI", "CalculatePI\CalculatePI.csproj", "{194669C8-9B1B-4ADB-A20C-5B330564B344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowMiddleSquareMethod", "..\ShowMiddleSquareMethod\ShowMiddleSquareMethod.csproj", "{674D173C-ECFC-4344-B738-F6E182EAEEAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowMiddleSquareMethod", "ShowMiddleSquareMethod\ShowMiddleSquareMethod.csproj", "{674D173C-ECFC-4344-B738-F6E182EAEEAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddleSquareWeylSequence", "..\MiddleSquareWeylSequence\MiddleSquareWeylSequence.csproj", "{877BF7FF-0295-4BCB-9828-93A254667491}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddleSquareWeylSequence", "MiddleSquareWeylSequence\MiddleSquareWeylSequence.csproj", "{877BF7FF-0295-4BCB-9828-93A254667491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome", "Welcome\Welcome\Welcome.csproj", "{03966E2B-4DD2-42BA-9093-EEBBCA12A370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNGCryptoServiceProvider", "..\RNGCryptoServiceProvider\RNGCryptoServiceProvider.csproj", "{F4E89D36-A828-4526-9E2A-E43C6868D29A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmark", "Benchmark\Benchmark.csproj", "{EF3CA40C-9D03-4E69-917C-92D1AA786E27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{877BF7FF-0295-4BCB-9828-93A254667491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877BF7FF-0295-4BCB-9828-93A254667491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877BF7FF-0295-4BCB-9828-93A254667491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03966E2B-4DD2-42BA-9093-EEBBCA12A370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03966E2B-4DD2-42BA-9093-EEBBCA12A370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03966E2B-4DD2-42BA-9093-EEBBCA12A370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03966E2B-4DD2-42BA-9093-EEBBCA12A370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E89D36-A828-4526-9E2A-E43C6868D29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E89D36-A828-4526-9E2A-E43C6868D29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E89D36-A828-4526-9E2A-E43C6868D29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E89D36-A828-4526-9E2A-E43C6868D29A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3CA40C-9D03-4E69-917C-92D1AA786E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3CA40C-9D03-4E69-917C-92D1AA786E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3CA40C-9D03-4E69-917C-92D1AA786E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3CA40C-9D03-4E69-917C-92D1AA786E27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,7 @@ Show welcome app
 Demostrate max range issue
 
             var rnd = new Random();
-            var number = rnd.Next(1, 100);
+            var number = rnd.Next();
             Console.WriteLine(number);
 
 
@@ -53,6 +53,7 @@ Demostrate max range issue
 What can we do with random numbers?
     Well we can calculate PI
     Show visualisation
+    Will not be perfect
 
 And we can play games - for example shuffle a pack of cards  (expand if needed)
     Show HigherLower
@@ -78,7 +79,9 @@ And we can play games - for example shuffle a pack of cards  (expand if needed)
 
 What happens if we don't specify a seed
 
-    Show both in .net framework and .net core    (hide solution explorer)
+    Show both in .net framework and .net core  copy code for console app 2  (hide solution explorer)
+
+        Start both
 
             Console.Title = "ConsoleApp1";
             for (int i = 0; i < 1000; i++)
@@ -101,3 +104,27 @@ What happens if we don't specify a seed
 
             https://github.com/dotnet/corefx/blob/master/src/Common/src/CoreLib/System/Random.cs#L126
 
+
+How are pseudorandom numbers created?
+            MiddleSquareMethod
+
+            The very first software algorithm to generate random numbers, was supposedly written in 1946 by John von Neumann
+
+            To generate a sequence of n-digit pseudorandom numbers, an n-digit starting value is created and squared, producing a 2n-digit number. If the result has fewer than 2n digits, leading zeroes are added to compensate. The middle n digits of the result would be the next number in the sequence, and returned as the result. This process is then repeated to generate more numbers.
+
+            Show demo
+
+            Show graph
+                Two issues
+                    One - very predictable
+                    Two - most seeds converge to zero
+
+
+
+Secure?
+Cryptographic RNGs (also known as "cryptographically strong" or "cryptographically secure" RNGs) seek to generate random numbers that not only "look random", but are cost-prohibitive to guess. Cryptographic RNGs are RECOMMENDED for applications that use random numbers for information security, such as—
+
+
+External Sources of Entypry
+
+Measure Randomness

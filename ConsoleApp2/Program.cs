@@ -11,9 +11,10 @@ namespace ConsoleApp1
             var rnd = new Random();
             for (int i = 0; i < 1000; i++)
             {
-                var number = rnd.Next(1, 6);
+                var number = rnd.Next(1, 7);
                 Console.WriteLine(number);
             }
+
             Console.ReadLine();
         }
     }
